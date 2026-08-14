@@ -1,0 +1,10 @@
+Báo cáo kết quả thực hành Lab 16 - AWS Cloud AI Environment
+
+1. Nhận xét về Thời gian Huấn luyện (Training Time):
+Mô hình LightGBM huấn luyện trên CPU (t3.medium) với tập dữ liệu Credit Card Fraud (hơn 284,000 dòng) hoàn thành cực kỳ nhanh, chỉ mất khoảng 4.47 giây. Điều này chứng minh rằng với các bài toán dữ liệu dạng bảng (tabular data), việc sử dụng các thuật toán tối ưu như LightGBM trên CPU là hoàn toàn khả thi và hiệu quả về mặt chi phí mà chưa cần phải thuê GPU đắt đỏ.
+
+2. Nhận xét về Chất lượng Mô hình (AUC & Accuracy):
+Mô hình đạt chỉ số AUC-ROC là 0.8203 và độ chính xác (Accuracy) lên tới 99.83%. Dù F1-Score ở mức 0.55 do đặc thù dữ liệu gian lận thẻ tín dụng mất cân bằng cực kỳ nghiêm trọng, nhưng mô hình vẫn cho thấy khả năng bắt được các giao dịch bất thường khá tốt.
+
+3. Nhận xét về Tốc độ Suy luận (Inference Speed):
+Tốc độ dự đoán (Inference latency) cho 1 giao dịch đơn lẻ chỉ mất vỏn vẹn 1.53 mili-giây. Đặc biệt, khi dự đoán theo lô (batch) 1000 dòng, hệ thống chỉ mất 5.93 mili-giây. Tốc độ này cực kỳ ấn tượng và dư sức đáp ứng các hệ thống phát hiện gian lận thẻ tín dụng đòi hỏi độ trễ theo thời gian thực (real-time) trong thực tế.

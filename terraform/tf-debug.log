@@ -1,0 +1,51 @@
+2026-08-14T16:52:49.073+0700 [INFO]  Terraform version: 1.15.8
+2026-08-14T16:52:49.075+0700 [DEBUG] using github.com/hashicorp/go-tfe v1.105.0
+2026-08-14T16:52:49.075+0700 [DEBUG] using github.com/hashicorp/hcl/v2 v2.24.0
+2026-08-14T16:52:49.075+0700 [DEBUG] using github.com/hashicorp/terraform-svchost v0.2.1
+2026-08-14T16:52:49.075+0700 [DEBUG] using github.com/zclconf/go-cty v1.18.0
+2026-08-14T16:52:49.075+0700 [INFO]  Go runtime version: go1.25.10
+2026-08-14T16:52:49.075+0700 [INFO]  CLI args: []string{"C:\\terraform\\terraform.exe", "plan"}
+2026-08-14T16:52:49.082+0700 [DEBUG] Attempting to open CLI config file: C:\Users\Admin\AppData\Roaming\terraform.rc
+2026-08-14T16:52:49.082+0700 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2026-08-14T16:52:49.083+0700 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2026-08-14T16:52:49.083+0700 [DEBUG] ignoring non-existing provider search directory C:\Users\Admin\AppData\Roaming\terraform.d\plugins
+2026-08-14T16:52:49.084+0700 [DEBUG] ignoring non-existing provider search directory C:\Users\Admin\AppData\Roaming\HashiCorp\Terraform\plugins
+2026-08-14T16:52:49.084+0700 [INFO]  CLI command args: []string{"plan"}
+2026-08-14T16:52:50.186+0700 [DEBUG] checking for provisioner in "."
+2026-08-14T16:52:50.188+0700 [DEBUG] checking for provisioner in "C:\\terraform"
+2026-08-14T16:52:50.196+0700 [INFO]  backend/local: starting Plan operation
+2026-08-14T16:52:50.216+0700 [DEBUG] ReferenceTransformer: "var.hf_token" references: []
+2026-08-14T16:52:50.216+0700 [DEBUG] ReferenceTransformer: "var.model_id" references: []
+2026-08-14T16:52:50.216+0700 [DEBUG] ReferenceTransformer: "var.enable_gpu" references: []
+2026-08-14T16:52:50.216+0700 [DEBUG] ReferenceTransformer: "var.cpu_instance_type" references: []
+2026-08-14T16:52:50.216+0700 [DEBUG] ReferenceTransformer: "var.gpu_instance_type" references: []
+2026-08-14T16:52:50.216+0700 [DEBUG] ReferenceTransformer: "var.aws_region" references: []
+2026-08-14T16:52:50.218+0700 [DEBUG] Starting graph walk: walkInit
+2026-08-14T16:52:50.230+0700 [DEBUG] created provider logger: level=debug
+2026-08-14T16:52:50.231+0700 [INFO]  provider: configuring client automatic mTLS
+2026-08-14T16:52:50.262+0700 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/5.100.0/windows_amd64/terraform-provider-aws_v5.100.0_x5.exe args=[".terraform/providers/registry.terraform.io/hashicorp/aws/5.100.0/windows_amd64/terraform-provider-aws_v5.100.0_x5.exe"]
+2026-08-14T16:52:50.271+0700 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/5.100.0/windows_amd64/terraform-provider-aws_v5.100.0_x5.exe pid=5712
+2026-08-14T16:52:50.271+0700 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/5.100.0/windows_amd64/terraform-provider-aws_v5.100.0_x5.exe
+2026-08-14T16:52:50.540+0700 [DEBUG] provider.terraform-provider-aws_v5.100.0_x5.exe: Starting github.com/hashicorp/terraform-provider-aws@5.100.0 (go1.23.10)...
+2026-08-14T16:52:50.540+0700 [DEBUG] provider.terraform-provider-aws_v5.100.0_x5.exe: Initializing Terraform AWS Provider...
+2026-08-14T16:52:50.609+0700 [INFO]  provider.terraform-provider-aws_v5.100.0_x5.exe: configuring server automatic mTLS: timestamp="2026-08-14T16:52:50.608+0700"
+2026-08-14T16:52:50.626+0700 [DEBUG] provider.terraform-provider-aws_v5.100.0_x5.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp="2026-08-14T16:52:50.625+0700"
+2026-08-14T16:52:50.626+0700 [DEBUG] provider: using plugin: version=5
+2026-08-14T16:52:50.774+0700 [WARN]  provider.stdio: stdio service not available, stdout/stderr syncing unavailable
+2026-08-14T16:52:50.774+0700 [WARN]  provider.stdio: stdio service unavailable, run will do nothing
+2026-08-14T16:52:50.776+0700 [ERROR] plugin.(*GRPCProvider).GetProviderSchema: error="rpc error: code = Unavailable desc = connection error: desc = \"transport: authentication handshake failed: tls: failed to verify certificate: x509: certificate signed by unknown authority\""
+2026-08-14T16:52:52.778+0700 [WARN]  provider: plugin failed to exit gracefully
+2026-08-14T16:52:52.796+0700 [ERROR] provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/5.100.0/windows_amd64/terraform-provider-aws_v5.100.0_x5.exe id=5712 error="exit status 1"
+2026-08-14T16:52:52.796+0700 [DEBUG] created provider logger: level=debug
+2026-08-14T16:52:52.796+0700 [INFO]  provider: configuring client automatic mTLS
+2026-08-14T16:52:52.803+0700 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.9.0/windows_amd64/terraform-provider-random_v3.9.0_x5.exe args=[".terraform/providers/registry.terraform.io/hashicorp/random/3.9.0/windows_amd64/terraform-provider-random_v3.9.0_x5.exe"]
+2026-08-14T16:52:52.808+0700 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.9.0/windows_amd64/terraform-provider-random_v3.9.0_x5.exe pid=21740
+2026-08-14T16:52:52.808+0700 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.9.0/windows_amd64/terraform-provider-random_v3.9.0_x5.exe
+2026-08-14T16:52:52.831+0700 [INFO]  provider.terraform-provider-random_v3.9.0_x5.exe: configuring server automatic mTLS: timestamp="2026-08-14T16:52:52.830+0700"
+2026-08-14T16:52:52.847+0700 [DEBUG] provider.terraform-provider-random_v3.9.0_x5.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp="2026-08-14T16:52:52.847+0700"
+2026-08-14T16:52:52.847+0700 [DEBUG] provider: using plugin: version=5
+2026-08-14T16:52:52.889+0700 [WARN]  provider.stdio: stdio service not available, stdout/stderr syncing unavailable
+2026-08-14T16:52:52.889+0700 [WARN]  provider.stdio: stdio service unavailable, run will do nothing
+2026-08-14T16:52:52.889+0700 [ERROR] plugin.(*GRPCProvider).GetProviderSchema: error="rpc error: code = Unavailable desc = connection error: desc = \"transport: authentication handshake failed: tls: failed to verify certificate: x509: certificate signed by unknown authority\""
+2026-08-14T16:52:54.889+0700 [WARN]  provider: plugin failed to exit gracefully
+2026-08-14T16:52:54.894+0700 [ERROR] provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.9.0/windows_amd64/terraform-provider-random_v3.9.0_x5.exe id=21740 error="exit status 1"
